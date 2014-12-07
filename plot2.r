@@ -30,6 +30,6 @@ plot2 <- function() {
         print(tail(pwrdata,300))
         # print to png
         png(file = "plot2.png")
-        plot2 <- plot(pwrdata$dt, pwrdata$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type="l")
+        plot2 <- plot(pwrdata$dt, pwrdata$Global_active_power, xlab = "", ylab = "Global Active Power (KiloWatts", type = "l",width = 480, height = 480, units = "px")
         dev.off()       
 }
